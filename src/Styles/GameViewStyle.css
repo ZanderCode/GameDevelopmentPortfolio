@@ -1,0 +1,100 @@
+/* Splash Blobs */
+
+.game-view{
+    min-height:100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #242424;
+    /* border:1px solid green; */
+}
+
+.splash-style path{
+    fill: #515AAC !important;
+}
+
+.splash-container-game-view{
+    width: 100%;
+}
+
+.splash-flipped{
+    position: relative;
+    top:-1px;
+    transform: rotateX(180deg);
+}
+
+/* Game Content grid*/
+
+.game-content-grid{
+    width:80%;
+    margin: auto;
+    margin-top:-50%;
+    display: grid;
+    grid-template-areas: "main blank"
+                         "main slideshow";
+    grid-template-columns: 1fr 2fr;
+}
+
+.game-content-grid div{
+    position: relative;
+
+}
+
+.grid-image{
+    grid-area: main;
+}
+
+.grid-slideshow{
+    grid-area: slideshow;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar:horizontal{
+    background-color: white;
+    border: 1px solid #d5d5d5;
+}
+
+.grid-blank{
+    grid-area: blank;
+    height:200px;
+}
+
+.grid-image-container{
+    background-color: #DCDCDC;
+    width:95%;
+    height:200px;
+    margin: auto;
+    border-radius: 30px;
+    border: 20px solid #242424;
+}
+
+.grid-header{
+    color:#DCDCDC;
+    margin-left:20px;
+}
+
+.grid-image-description{
+    margin: 10px auto 0 20px;
+    display: block;
+    float: left;
+    color:#DCDCDC;
+}
+
+/* slideshow */
+
+.grid-slider{
+    height:250px;
+    margin: auto;
+    width: max-content;
+}
+
+.slideshow-image{
+    height:250px;
+    width:160px;
+    background-color: #DCDCDC;
+    border-radius: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
